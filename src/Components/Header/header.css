@@ -1,0 +1,86 @@
+/* Netflix Header Styles */
+.header_container {
+  background-image: linear-gradient(to top, transparent 0%,rgba(0,0,0,0.8)50%);/* Slight transparency for sleek look */
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  padding: 0 20px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Left Navigation */
+.header_left_container ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.header_left_container ul li {
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+/* .header_left_container ul li:hover {
+  color: red;
+} */
+
+.header_left_container img {
+  width: 100px;
+  height: auto;
+}
+
+/* Right Icons */
+.header_right_container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.header_right_container svg {
+  color: white;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  transition: transform 0.2s, color 0.2s;
+}
+
+/* .header_right_container svg:hover {
+  transform: scale(1.1);
+  color: red;
+} */
+.Contact{
+  width: 30px;
+  height: 30px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 900px) {
+  .header_left_container ul li:nth-child(n + 3) { /* Hides extra menu items */
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .header_left_container ul li:first-child {
+    margin-right: auto;
+  }
+
+  .header_right_container svg {
+    width: 20px;
+    height: 20px;
+  }
+}
