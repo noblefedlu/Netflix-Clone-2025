@@ -4,7 +4,7 @@ import react from "@vitejs/plugin-react";
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-base:/netflix-clone-2025/,
+base:/Netflix-Clone-2025/,
   // server: {
   //   // https: true,
   // },
